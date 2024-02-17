@@ -1,0 +1,568 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\Lorena\Documents\curso python-ML-EC\ECO\dif dif pc\PREG1.log
+  log type:  text
+ opened on:  11 Feb 2024, 23:51:50
+
+. do "C:\Users\Lorena\AppData\Local\Temp\STD8c98_000000.tmp"
+
+. shell curl -o cbp98st.zip "https://www2.census.gov/programs-surveys/cbp/datasets/1998/cbp98st.zip"
+
+. unzipfile cbp98st.zip, replace
+    inflating: cbp98st.txt
+
+successfully unzipped cbp98st.zip to current directory
+total processed:  1
+        skipped:  0
+      extracted:  1
+
+. 
+. import delimited "cbp98st.txt", clear
+(53 vars, 98,103 obs)
+
+. keep if substr(naics,4,3)=="///"
+(93,910 observations deleted)
+
+. keep fipstate naics emp qp1 ap est
+
+. gen year=1998
+
+. save cbp98st.dta, replace
+(note: file cbp98st.dta not found)
+file cbp98st.dta saved
+
+. 
+. shell curl -o cbp99st.zip "https://www2.census.gov/programs-surveys/cbp/datasets/1999/cbp99st.zip"
+
+. unzipfile cbp99st.zip, replace
+    inflating: cbp99st.txt
+
+successfully unzipped cbp99st.zip to current directory
+total processed:  1
+        skipped:  0
+      extracted:  1
+
+. 
+. import delimited "cbp99st.txt", clear
+(53 vars, 98,488 obs)
+
+. keep if substr(naics,4,3)=="///"
+(94,293 observations deleted)
+
+. keep fipstate naics emp qp1 ap est
+
+. gen year=1999
+
+. save cbp99st.dta, replace
+(note: file cbp99st.dta not found)
+file cbp99st.dta saved
+
+. 
+. shell curl -o cbp00st.zip "https://www2.census.gov/programs-surveys/cbp/datasets/2000/cbp00st.zip"
+
+. unzipfile cbp00st.zip, replace
+    inflating: Cbp00st.txt
+
+successfully unzipped cbp00st.zip to current directory
+total processed:  1
+        skipped:  0
+      extracted:  1
+
+. 
+. import delimited "cbp00st.txt", clear
+(53 vars, 98,550 obs)
+
+. keep if substr(naics,4,3)=="///"
+(94,352 observations deleted)
+
+. keep fipstate naics emp qp1 ap est
+
+. gen year=2000
+
+. save cbp00st.dta, replace
+(note: file cbp00st.dta not found)
+file cbp00st.dta saved
+
+. 
+. shell curl -o cbp01st.zip "https://www2.census.gov/programs-surveys/cbp/datasets/2001/cbp01st.zip"
+
+. unzipfile cbp01st.zip, replace
+    inflating: cbp01st.txt
+
+successfully unzipped cbp01st.zip to current directory
+total processed:  1
+        skipped:  0
+      extracted:  1
+
+. 
+. import delimited "cbp01st.txt", clear
+(53 vars, 98,672 obs)
+
+. keep if substr(naics,4,3)=="///"
+(94,470 observations deleted)
+
+. keep fipstate naics emp qp1 ap est
+
+. gen year=2001
+
+. save cbp01st.dta, replace
+(note: file cbp01st.dta not found)
+file cbp01st.dta saved
+
+. 
+. shell curl -o cbp02st.zip "https://www2.census.gov/programs-surveys/cbp/datasets/2002/cbp02st.zip"
+
+. unzipfile cbp02st.zip, replace
+    inflating: cbp02st.txt
+
+successfully unzipped cbp02st.zip to current directory
+total processed:  1
+        skipped:  0
+      extracted:  1
+
+. 
+. import delimited "cbp02st.txt", clear
+(53 vars, 98,452 obs)
+
+. keep if substr(naics,4,3)=="///"
+(94,250 observations deleted)
+
+. keep fipstate naics emp qp1 ap est
+
+. gen year=2002
+
+. save cbp02st.dta, replace
+(note: file cbp02st.dta not found)
+file cbp02st.dta saved
+
+. 
+. shell curl -o cbp03st.zip "https://www2.census.gov/programs-surveys/cbp/datasets/2003/cbp03st.zip"
+
+. unzipfile cbp03st.zip, replace
+    inflating: cbp03st.txt
+
+successfully unzipped cbp03st.zip to current directory
+total processed:  1
+        skipped:  0
+      extracted:  1
+
+. 
+. import delimited "cbp03st.txt", clear
+(53 vars, 99,290 obs)
+
+. keep if substr(naics,4,3)=="///"
+(94,882 observations deleted)
+
+. keep fipstate naics emp qp1 ap est
+
+. gen year=2003
+
+. save cbp03st.dta, replace
+(note: file cbp03st.dta not found)
+file cbp03st.dta saved
+
+. 
+. shell curl -o cbp04st.zip "https://www2.census.gov/programs-surveys/cbp/datasets/2004/cbp04st.zip"
+
+. unzipfile cbp04st.zip, replace
+    inflating: cbp04st.txt
+
+successfully unzipped cbp04st.zip to current directory
+total processed:  1
+        skipped:  0
+      extracted:  1
+
+. 
+. import delimited "cbp04st.txt", clear
+(53 vars, 99,178 obs)
+
+. keep if substr(naics,4,3)=="///"
+(94,773 observations deleted)
+
+. keep fipstate naics emp qp1 ap est
+
+. gen year=2004
+
+. save cbp04st.dta, replace
+(note: file cbp04st.dta not found)
+file cbp04st.dta saved
+
+. 
+. shell curl -o cbp05st.zip "https://www2.census.gov/programs-surveys/cbp/datasets/2005/cbp05st.zip"
+
+. unzipfile cbp05st.zip, replace
+    inflating: cbp05st.txt
+
+successfully unzipped cbp05st.zip to current directory
+total processed:  1
+        skipped:  0
+      extracted:  1
+
+. 
+. import delimited "cbp05st.txt", clear
+(53 vars, 99,126 obs)
+
+. keep if substr(naics,4,3)=="///"
+(94,723 observations deleted)
+
+. keep fipstate naics emp qp1 ap est
+
+. gen year=2005
+
+. save cbp05st.dta, replace
+(note: file cbp05st.dta not found)
+file cbp05st.dta saved
+
+. 
+. shell curl -o cbp06st.zip "https://www2.census.gov/programs-surveys/cbp/datasets/2006/cbp06st.zip"
+
+. unzipfile cbp06st.zip, replace
+    inflating: cbp06st.txt
+
+successfully unzipped cbp06st.zip to current directory
+total processed:  1
+        skipped:  0
+      extracted:  1
+
+. 
+. import delimited "cbp06st.txt", clear
+(53 vars, 99,082 obs)
+
+. keep if substr(naics,4,3)=="///"
+(94,682 observations deleted)
+
+. keep fipstate naics emp qp1 ap est
+
+. gen year=2006
+
+. save cbp06st.dta, replace
+(note: file cbp06st.dta not found)
+file cbp06st.dta saved
+
+. 
+. use cbp98st.dta, clear 
+
+. append using cbp99st.dta 
+
+. append using cbp00st.dta 
+
+. append using cbp01st.dta 
+
+. append using cbp02st.dta 
+
+. append using cbp03st.dta
+
+. append using cbp04st.dta 
+
+. append using cbp05st.dta
+
+. append using cbp06st.dta
+
+. 
+end of do-file
+
+. do "C:\Users\Lorena\AppData\Local\Temp\STD8c98_000000.tmp"
+
+. gen post_china=(year>=2001)
+
+. 
+. 
+. * Pregunta 3
+. 
+. gen new_naics= substr(naics, 1,2)
+
+. des new_naics
+
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+new_naics       str2    %9s                   
+
+. destring new_naics, replace 
+new_naics: all characters numeric; replaced as byte
+
+. 
+. gen manuf = new_naics
+
+. recode manuf (31 32 33 = 1) (else= 0)
+(manuf: 38606 changes made)
+
+. 
+. * Pregunta 4 
+. 
+.  label var qp1 "Total First Quearter Payroll"
+
+.  label var emp "Total Mid-March Employees"
+
+.  label var post_china "China entering the WTO"
+
+.  label var manuf "Manufactoring industries"
+
+.  label var est "Total Number of Establishments"
+
+. 
+.  gen emp_post_china= emp if post_china== 1
+(12,586 missing values generated)
+
+.  gen emp_pre_china= emp if post_china == 0
+(26,020 missing values generated)
+
+. 
+. * Estimamos
+. 
+.  egen emp_manu_pre= mean(emp_pre_china) if manuf ==1
+(29022 missing values generated)
+
+.  
+.  egen emp_manu_post= mean(emp_post_china) if manuf ==1
+(29022 missing values generated)
+
+.  
+.  egen emp_other_pre= mean(emp_pre_china) if manuf == 0
+(9584 missing values generated)
+
+.  
+.  egen emp_other_post= mean(emp_post_china) if manuf == 0
+(9584 missing values generated)
+
+.  
+.  * avenmp_manu_post - avenmp_manu_pre
+.  
+.  gen res_manuf= emp_manu_post - emp_manu_pre
+(29,022 missing values generated)
+
+.  
+. * avenmp_other_post - avenmp_other_pre
+.  gen res_other= emp_other_post - emp_other_pre 
+(9,584 missing values generated)
+
+.  
+. * Replicamos
+.  egen res_manuf1 = max(res_manuf)
+
+.  
+.  egen res_other1 = max(res_other)
+
+.  
+. * DID
+.  
+.  gen DID = res_manuf1 - res_other1
+
+.  
+.  summarize res_manuf1 res_other1 DID
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+  res_manuf1 |     38,606   -2252.274           0  -2252.274  -2252.274
+  res_other1 |     38,606    1040.305           0   1040.305   1040.305
+         DID |     38,606   -3292.579           0  -3292.579  -3292.579
+
+.  
+. * Los resultados representan una reducción significativa en el empleo en el sector manufacturero, en contraste con el aumento en el empleo en los sectores no manufactureros, sugiere un
+>  efecto adverso claro de la entrada de China a la OMC sobre el empleo manufacturero en EE. UU. La magnitud de la estimación DiD (-3292.579) resalta la severidad de dicho impacto.
+.  
+. 
+. * Pregunta 5 
+. 
+.  gen post_treatment= post_china*manuf
+
+.  reg emp post_china manuf post_treatment
+
+      Source |       SS           df       MS      Number of obs   =    38,606
+-------------+----------------------------------   F(3, 38602)     =    175.99
+       Model |  1.8911e+12         3  6.3035e+11   Prob > F        =    0.0000
+    Residual |  1.3826e+14    38,602  3.5817e+09   R-squared       =    0.0135
+-------------+----------------------------------   Adj R-squared   =    0.0134
+       Total |  1.4015e+14    38,605  3.6304e+09   Root MSE        =     59847
+
+--------------------------------------------------------------------------------
+           emp |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+---------------+----------------------------------------------------------------
+    post_china |   1040.306   750.9161     1.39   0.166    -431.5091     2512.12
+         manuf |  -13920.22   1225.605   -11.36   0.000    -16322.43      -11518
+post_treatment |   -3292.58   1498.411    -2.20   0.028    -6229.504    -355.657
+         _cons |   29539.34   617.6039    47.83   0.000     28328.82    30749.86
+--------------------------------------------------------------------------------
+
+.  
+. *La adhesión de China a la OMC resultó en una disminución de 3292.58 puestos de trabajo en el sector manufacturero de Estados Unidos.
+. 
+. * Pregunta 6
+. 
+. gen average= qp1/emp
+(5,598 missing values generated)
+
+. 
+. reg est post_china manuf post_treatment
+
+      Source |       SS           df       MS      Number of obs   =    38,606
+-------------+----------------------------------   F(3, 38602)     =    425.88
+       Model |  2.3053e+10         3  7.6844e+09   Prob > F        =    0.0000
+    Residual |  6.9652e+11    38,602  18043509.3   R-squared       =    0.0320
+-------------+----------------------------------   Adj R-squared   =    0.0320
+       Total |  7.1957e+11    38,605  18639260.7   Root MSE        =    4247.8
+
+--------------------------------------------------------------------------------
+           est |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+---------------+----------------------------------------------------------------
+    post_china |   34.06917   53.29778     0.64   0.523    -70.39583    138.5342
+         manuf |  -1753.077   86.98977   -20.15   0.000     -1923.58   -1582.575
+post_treatment |  -52.57497   106.3527    -0.49   0.621     -261.029    155.8791
+         _cons |    2091.31   43.83568    47.71   0.000     2005.391    2177.229
+--------------------------------------------------------------------------------
+
+. 
+. * La incorporación de China a la OMC provocó una reducción de 52 establecimientos en el ámbito manufacturero estadounidense.
+. 
+. reg  average post_china manuf post_treatment
+
+      Source |       SS           df       MS      Number of obs   =    33,008
+-------------+----------------------------------   F(3, 33004)     =    241.71
+       Model |  18340.7804         3  6113.59348   Prob > F        =    0.0000
+    Residual |   834782.85    33,004  25.2933841   R-squared       =    0.0215
+-------------+----------------------------------   Adj R-squared   =    0.0214
+       Total |   853123.63    33,007  25.8467486   Root MSE        =    5.0293
+
+--------------------------------------------------------------------------------
+       average |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+---------------+----------------------------------------------------------------
+    post_china |   1.469355   .0687775    21.36   0.000     1.334549    1.604161
+         manuf |   .9393528    .110764     8.48   0.000     .7222514    1.156454
+post_treatment |  -.2149973   .1350649    -1.59   0.111    -.4797293    .0497348
+         _cons |   7.134095   .0566805   125.87   0.000        7.023    7.245191
+--------------------------------------------------------------------------------
+
+.  
+. * La inclusión de China en la OMC disminuyó el salario medio en 0.21 unidades de moneda.
+. 
+. 
+. * Los resultados muestran que la entrada de China a la Organización Mundial del Comercio (OMC) en 2001 no tuvo un impacto significativo en el número de establecimientos manufactureros 
+> en Estados Unidos, aunque sí se observó una tendencia negativa que no alcanzó significancia estadística. No obstante, esta adhesión se asocia con un incremento significativo en el pago
+>  promedio a nivel nacional, lo que refleja posiblemente ajustes en sectores fuera de la manufactura.
+. 
+. 
+. 
+. * Pregunta 7
+. 
+. gen lemp= log(emp)
+(5,598 missing values generated)
+
+. 
+. reg lemp post_china manuf post_treatment
+
+      Source |       SS           df       MS      Number of obs   =    33,008
+-------------+----------------------------------   F(3, 33004)     =    298.18
+       Model |  2406.08704         3  802.029014   Prob > F        =    0.0000
+    Residual |  88772.8067    33,004  2.68975902   R-squared       =    0.0264
+-------------+----------------------------------   Adj R-squared   =    0.0263
+       Total |  91178.8937    33,007  2.76241081   Root MSE        =      1.64
+
+--------------------------------------------------------------------------------
+          lemp |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+---------------+----------------------------------------------------------------
+    post_china |  -.0338726   .0224285    -1.51   0.131    -.0778331     .010088
+         manuf |  -.4957951   .0361203   -13.73   0.000    -.5665923    -.424998
+post_treatment |  -.1672472   .0440449    -3.80   0.000    -.2535768   -.0809176
+         _cons |   9.369065   .0184836   506.89   0.000     9.332836    9.405293
+--------------------------------------------------------------------------------
+
+. 
+. * La regresión confirma un impacto negativo significativo de la entrada de China a la OMC sobre el empleo en el sector manufacturero de EE. UU., destacando una disminución en el empleo
+>  en este sector posterior a la entrada de China a la OMC. La falta de significancia estadística en post_china sugiere que el efecto no se extendió uniformemente a través de todos los s
+> ectores de la economía.
+. 
+. 
+. * Pregunta 8
+. 
+. gen dummy_98=(year==1998)
+
+. gen dummy_99=(year==1999)
+
+. gen dummy_00=(year==2000)
+
+. gen dummy_01=(year==2001)
+
+. gen dummy_02=(year==2002)
+
+. gen dummy_03=(year==2003)
+
+. gen dummy_04=(year==2004)
+
+. gen dummy_05=(year==2005)
+
+. gen dummy_06=(year==2006)
+
+. 
+. 
+. gen treatment_year_98= dummy_98*manuf
+
+. 
+. gen treatment_year_99= dummy_99*manuf
+
+. 
+. gen treatment_year_00= dummy_00*manuf
+
+. 
+. gen treatment_year_01= dummy_01*manuf
+
+. 
+. gen treatment_year_02= dummy_02*manuf
+
+. 
+. gen treatment_year_03= dummy_03*manuf
+
+. 
+. gen treatment_year_04= dummy_04*manuf
+
+. 
+. gen treatment_year_05= dummy_05*manuf
+
+. 
+. gen treatment_year_06= dummy_06*manuf
+
+. 
+. * Pregunta 9
+. 
+. gen naics3 = substr(naics, 1, 3)
+
+. 
+. * Generamos el logaritmo del empleo
+. gen log_emp = log(emp)
+(5,598 missing values generated)
+
+. 
+. * Para la pregunta 10, generamos el logaritmo del número de establecimientos y el pago promedio
+. gen log_est = log(est)
+
+. gen average_pay = qp1 / emp
+(5,598 missing values generated)
+
+. gen log_average_pay = log(average_pay)
+(5,598 missing values generated)
+
+. 
+. * Instalamos reghdfe 
+. ssc install reghdfe, replace
+checking reghdfe consistency and verifying not already installed...
+installing into C:\Users\Lorena\ado\plus\...
+installation complete.
+
+. 
+. * Estimación del estudio de eventos para log(emp)
+. reghdfe log_emp i.year##i.manuf, absorb(naics3 fipstate) vce(cluster fipstate)
+reghdfe requires the ftools package, which is not installed
+    - install from SSC
+    - install from Github
+(error occurred while loading reghdfe.ado)
+r(9);
+
+end of do-file
+
+r(9);
+
+. log close
+      name:  <unnamed>
+       log:  C:\Users\Lorena\Documents\curso python-ML-EC\ECO\dif dif pc\PREG1.log
+  log type:  text
+ closed on:  11 Feb 2024, 23:54:16
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

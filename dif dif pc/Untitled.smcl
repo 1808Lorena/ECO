@@ -1,0 +1,40 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Lorena\Documents\curso python-ML-EC\ECO\dif dif pc\Untitled.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}11 Feb 2024, 23:43:08
+
+{com}. do "C:\Users\Lorena\AppData\Local\Temp\STD8c98_000000.tmp"
+{txt}
+{com}. use "C:/Users/Lorena/Documents/curso python-ML-EC/ECO/dif dif pc/base.dta",clear
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\Lorena\AppData\Local\Temp\STD8c98_000000.tmp"
+{txt}
+{com}. generate anykids= 1 if children >=1 
+{txt}(5,927 missing values generated)
+
+{com}. replace anykids =0 if missing(anykids)
+{txt}(5,927 real changes made)
+
+{com}. 
+. generate post93 =1 if year >= 1994
+{txt}(7,401 missing values generated)
+
+{com}. replace post93= 0 if missing(post93)
+{txt}(7,401 real changes made)
+
+{com}. 
+{txt}end of do-file
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Lorena\Documents\curso python-ML-EC\ECO\dif dif pc\Untitled.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}11 Feb 2024, 23:43:31
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
